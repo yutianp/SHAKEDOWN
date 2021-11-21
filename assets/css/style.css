@@ -9,9 +9,8 @@
     src: url("assets/typeface/SHAKEDOWN.otf") format("opentype");
 }
 @font-face {
-    font-family: SHAKEDOWN;
-    font-weight: bold;
-    src: url("assets/typeface/SHAKEDOWN.otf") format("opentype");
+    font-family: Lancia;
+    src: url("assets/typeface/News-706-BT_32385.ttf") format("truetype");
 }
 body {
   background: black;
@@ -19,13 +18,47 @@ body {
   margin: 0;
   display: block;
 }
-.scrollingText{
+.pacenotesContainer{
   margin: auto;
   width: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
 .pacenotes{
   font-family: SHAKEDOWN;
   color: white;
   font-size: 75pt;
   position: absolute;
+  pointer-events: none;
 }
+.tuningContainer{
+  pointer-events: none;
+}
+.tuning{
+  width: 25%;
+  padding: 10px;
+  z-index: -1;
+  color: white;
+  text-align: left;
+  position: sticky;
+  font-family: Lancia;
+  pointer-events: none;
+}
+.tuning td td{
+  pointer-events: none;
+}
+.videoContainer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+#POV{
+  width: 70%;
+  left: 50%;
+  position: absolute;
+  top: 200%;
+  transform: translate(-50%, -50%);

@@ -1,0 +1,31 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+@font-face {
+    font-family: SHAKEDOWN;
+    src: url("assets/typeface/SHAKEDOWN.otf") format("opentype");
+}
+@font-face {
+    font-family: SHAKEDOWN;
+    font-weight: bold;
+    src: url("assets/typeface/SHAKEDOWN.otf") format("opentype");
+}
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  display: block;
+}
+.scrollingText{
+  margin: auto;
+  width: 50%;
+}
+.pacenotes{
+  font-family: SHAKEDOWN;
+  color: white;
+  font-size: 75pt;
+  position: absolute;
+}

@@ -9,6 +9,13 @@
     src: url("assets/typeface/SHAKEDOWN.otf") format("opentype");
 }
 @font-face {
+    font-family: 'shakedownregular';
+    src: url('shakedown-webfont.woff2') format('woff2'),
+         url('shakedown-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: Lancia;
     src: url("assets/typeface/News-706-BT_32385.ttf") format("truetype");
 }
